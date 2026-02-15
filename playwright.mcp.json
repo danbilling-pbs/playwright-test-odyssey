@@ -1,0 +1,11 @@
+{
+  "mcp": "playwright",
+  "version": "1",
+  "agents": [
+    {
+      "name": "sample-agent",
+      "script": "agents/sample-agent.js",
+      "description": "Simple Playwright agent that navigates to example.com and saves a screenshot"
+    }
+  ]
+}
