@@ -4,12 +4,15 @@
 **Objective:** Test boundary conditions and business logic
 
 ## What You Will Learn
+
 - How to identify business rules
 - How to test boundary conditions  
 - How to test inventory management
 
 ## Business Rule Discovery
+
 From our exploration, we discovered:
+
 - **Maximum purchase:** 60 tickets per transaction
 - **Inventory tracking:** Tickets decrease after purchase
 - **Price calculation:** Total = quantity × price
@@ -17,6 +20,7 @@ From our exploration, we discovered:
 ## Instructions
 
 ### Step 1: Test Ticket Quantity Limits (10 minutes)
+
 Create: `tests/business-rules.spec.js`
 
 ```javascript
@@ -42,6 +46,7 @@ test('Test maximum ticket purchase limit', async ({ page }) => {
 ```
 
 ### Step 2: Test Inventory Management (10 minutes)
+
 ```javascript
 test('Test inventory decreases after purchase', async ({ page }) => {
   await page.goto('http://localhost:3000');
@@ -78,6 +83,7 @@ test('Test inventory decreases after purchase', async ({ page }) => {
 ```
 
 ## Investigation Tasks
+
 Research these scenarios:
 
 1. **Boundary Testing**
@@ -95,11 +101,13 @@ Research these scenarios:
    - What happens to sold-out events?
 
 ## Expected Outcomes
+
 - You can test business rules systematically
 - You understand boundary value testing
 - You can verify calculations and inventory changes
 
 ## Real-World Applications
+
 - E-commerce quantity limits
 - Banking transaction limits
 - Booking system capacity management

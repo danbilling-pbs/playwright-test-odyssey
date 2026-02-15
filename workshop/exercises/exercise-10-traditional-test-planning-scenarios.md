@@ -4,6 +4,7 @@
 **Objective:** Write manual test cases for the Ticketyboo application
 
 ## What You Will Learn
+
 - How to identify test scenarios
 - How to write clear test cases
 - How to think about edge cases and error conditions
@@ -11,6 +12,7 @@
 ## Instructions
 
 ### Step 1: Identify Happy Path Scenarios (10 minutes)
+
 Think about what a typical user would do. Write test cases for:
 
 1. **Basic Event Browsing**
@@ -26,6 +28,7 @@ Think about what a typical user would do. Write test cases for:
    - Expected result: What should be displayed?
 
 ### Step 2: Think About Problems (10 minutes)
+
 What could go wrong? Write test cases for:
 
 1. **Invalid Information**
@@ -40,10 +43,12 @@ What could go wrong? Write test cases for:
    - What should happen when all tickets are sold?
 
 ## Template for Test Cases
+
 Use this format:
 
 **Test Case:** [Give it a clear name]
 **Steps:**
+
 1. Step one
 2. Step two  
 3. Step three
@@ -53,6 +58,7 @@ Use this format:
 **Example:**
 **Test Case:** Book a single concert ticket
 **Steps:**
+
 1. Open localhost:3000
 2. Click on "Rock Legends Live"
 3. Fill in name: "John Smith"
@@ -60,17 +66,20 @@ Use this format:
 5. Fill in card details
 6. Click "Complete Purchase"
 
-**Expected Result:** 
+**Expected Result:**
+
 - Booking confirmation appears
 - Tickets available decreases by 1
 - Confirmation shows correct details
 
 ## Expected Outcomes
+
 - You have at least 5 test cases written
 - You understand the difference between happy path and error testing
 - You can explain your test cases to others
 
 ## Discussion Points
+
 - Which test cases are most important?
 - What did you find difficult to test?
 - What questions do you have about expected behaviour?

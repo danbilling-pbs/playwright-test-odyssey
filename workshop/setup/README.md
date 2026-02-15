@@ -7,6 +7,7 @@ This guide will help you set up both the **Ticketyboo application** (the system 
 Before starting, ensure you have the following installed:
 
 ### Required Software
+
 - **Node.js** (version 16 or higher)
   - Download from: https://nodejs.org
   - Verify installation: `node --version`
@@ -17,6 +18,7 @@ Before starting, ensure you have the following installed:
   - Download from: https://code.visualstudio.com
 
 ### System Requirements
+
 - **Operating System:** Windows 10+, macOS 10.15+, or Linux
 - **RAM:** Minimum 4GB (8GB recommended)
 - **Disk Space:** At least 1GB free space
@@ -27,6 +29,7 @@ Before starting, ensure you have the following installed:
 The Ticketyboo application is the event booking system we'll be testing.
 
 ### 1.1 Clone the Repository
+
 ```bash
 # Navigate to your preferred directory
 cd ~/Desktop  # or wherever you want to work
@@ -39,24 +42,28 @@ cd ticketyboo
 ```
 
 ### 1.2 Install Dependencies
+
 ```bash
 # Install all required packages
 npm install
 ```
 
 ### 1.3 Start the Application
+
 ```bash
 # Start the development server
 npm start
 ```
 
 **Expected Output:**
-```
+
+```text
 Local:   http://localhost:3000
 Network: http://192.168.x.x:3000
 ```
 
 ### 1.4 Verify Installation
+
 1. Open your browser
 2. Navigate to `http://localhost:3000`
 3. You should see the Ticketyboo homepage with event listings
@@ -69,6 +76,7 @@ Network: http://192.168.x.x:3000
 Now set up the testing framework in a separate directory.
 
 ### 2.1 Clone the Testing Repository
+
 ```bash
 # Open a new terminal/command prompt (keep Ticketyboo running)
 cd ~/Desktop  # or your preferred directory
@@ -81,6 +89,7 @@ cd playwright-test-odyssey
 ```
 
 ### 2.2 Install Dependencies
+
 ```bash
 # Install all required packages
 npm install
@@ -90,17 +99,20 @@ npx playwright install
 ```
 
 ### 2.3 Verify Installation
+
 ```bash
 # Run a simple test to verify everything works
 npx playwright test --version
 ```
 
 **Expected Output:**
-```
+
+```text
 Version 1.x.x-xxxx
 ```
 
 ### 2.4 Run Sample Tests
+
 ```bash
 # Run the example test (optional)
 npx playwright test tests/example.spec.js --headed
@@ -114,13 +126,16 @@ npx playwright test tests/example.spec.js --headed
 ### 3.1 Check Both Applications Are Running
 
 **Terminal 1 (Ticketyboo):**
+
 - Should show: `webpack compiled with 0 errors`
 - Application running at: `http://localhost:3000`
 
 **Terminal 2 (Playwright Tests):**
+
 - Ready to run commands like: `npx playwright test`
 
 ### 3.2 Test the Connection
+
 Run this quick test to ensure Playwright can access Ticketyboo:
 
 ```bash
@@ -135,7 +150,7 @@ npx playwright test tests/seed.spec.ts --headed
 
 After setup, you should have this structure:
 
-```
+```text
 ~/Desktop/
 ├── ticketyboo/                    # The application under test
 │   ├── src/
@@ -152,13 +167,16 @@ After setup, you should have this structure:
 ## Daily Workshop Routine
 
 ### Starting Your Day
+
 1. **Start Ticketyboo:**
+
    ```bash
    cd ~/Desktop/ticketyboo
    npm start
    ```
 
 2. **Open Testing Project:**
+
    ```bash
    cd ~/Desktop/playwright-test-odyssey
    # Ready for workshop exercises
@@ -169,6 +187,7 @@ After setup, you should have this structure:
    - Run: `npx playwright test tests/example.spec.js`
 
 ### During the Workshop
+
 - **Ticketyboo** runs continuously (don't close this terminal)
 - **Playwright commands** run from the testing directory
 - **Browser testing** will open/close automatically
@@ -176,6 +195,7 @@ After setup, you should have this structure:
 ## Quick Reference Commands
 
 ### Ticketyboo (Application)
+
 ```bash
 # Start the application
 npm start
@@ -185,6 +205,7 @@ Ctrl + C (or Cmd + C on Mac)
 ```
 
 ### Playwright (Testing)
+
 ```bash
 # Run all tests
 npx playwright test
@@ -208,27 +229,32 @@ npx playwright codegen localhost:3000
 ## Additional Setup Resources
 
 ### Platform-Specific Guides
+
 - **[Windows Setup Guide](windows-setup.md)** - Detailed Windows 10/11 instructions
 - **[macOS Setup Guide](macos-setup.md)** - Complete macOS installation guide  
 - **[Linux Setup Guide](linux-setup.md)** - Instructions for Ubuntu, CentOS, Fedora, etc.
 
 ### Support Documentation
+
 - **[Troubleshooting Guide](troubleshooting.md)** - Common issues and solutions
 - **[Pre-Workshop Checklist](pre-workshop-checklist.md)** - Verify your setup works
 
 ## Need Help During the Workshop?
 
 ### Quick Checks
+
 1. ✅ Is Ticketyboo running at localhost:3000?
 2. ✅ Are you in the correct directory for commands?
 3. ✅ Did you install all dependencies?
 
 ### Common Commands
+
 - **Restart Ticketyboo:** `Ctrl+C` then `npm start`
 - **Update Playwright:** `npx playwright install`
 - **Check Node version:** `node --version`
 
 ### Get Support
+
 - Ask your facilitator
 - Check the [troubleshooting guide](troubleshooting.md)
 - Use the [pre-workshop checklist](pre-workshop-checklist.md)
