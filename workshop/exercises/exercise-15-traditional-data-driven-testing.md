@@ -4,16 +4,19 @@
 **Objective:** Run the same test with different data sets
 
 ## What You Will Learn
+
 - How to test multiple scenarios efficiently
 - How to use test data files
 - How to create parameterised tests
 
 ## The Scenario
+
 You want to test booking tickets for different event types with various customer data.
 
 ## Instructions
 
 ### Step 1: Create Test Data (5 minutes)
+
 Create: `data/customers.json`
 
 ```json
@@ -46,6 +49,7 @@ Create: `data/customers.json`
 ```
 
 ### Step 2: Create Data-Driven Test (15 minutes)
+
 Create: `tests/data-driven.spec.js`
 
 ```javascript
@@ -83,6 +87,7 @@ for (const customer of customers) {
 ```
 
 ### Alternative: Parameterised Tests
+
 For more control, use Playwright's test.describe.parallel:
 
 ```javascript
@@ -96,22 +101,26 @@ test.describe('Booking with different customers', () => {
 ```
 
 ## Benefits of Data-Driven Testing
+
 - **Efficiency:** Test multiple scenarios quickly
 - **Coverage:** Ensure various data combinations work
 - **Maintenance:** Update test data without changing test code
 
 ## Real-World Applications
+
 - Testing different user roles
 - Testing various input combinations  
 - Testing across different environments
 - Regression testing with historical data
 
 ## Expected Outcomes
+
 - You understand parameterised testing
 - You can separate test data from test logic
 - You can run comprehensive data scenarios
 
 ## Extension Activities
+
 1. Create invalid customer data and test error handling
 2. Test different events with the same customer data
 3. Add more customer fields (phone number, address)

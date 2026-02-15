@@ -4,17 +4,20 @@
 **Objective:** Write and run your first automated test using Playwright
 
 ## What You Will Learn
+
 - How to write a basic Playwright test
 - How to run tests and see results
 - How to use browser inspection tools
 
 ## Prerequisites
+
 - Playwright should be installed and configured
 - The Ticketyboo application should be running on localhost:3000
 
 ## Instructions
 
 ### Step 1: Create Your First Test File (5 minutes)
+
 1. Create a new file: `tests/my-first-test.spec.js`
 2. Copy this basic structure:
 
@@ -34,6 +37,7 @@ test('Basic page load test', async ({ page }) => {
 ```
 
 ### Step 2: Run Your Test (5 minutes)
+
 1. Open your terminal/command prompt
 2. Run: `npx playwright test my-first-test.spec.js`
 3. Observe the results
@@ -42,6 +46,7 @@ test('Basic page load test', async ({ page }) => {
 **If the test fails:** 📋 Don't worry - debugging is part of testing!
 
 ### Step 3: Add More Checks (10 minutes)
+
 Add these checks to your test:
 
 ```javascript
@@ -71,12 +76,15 @@ test('Check event filtering works', async ({ page }) => {
 **Solution:** Check localhost:3000 is running in another terminal
 
 ## Expected Outcomes
+
 - You have a working Playwright test
 - You understand basic Playwright syntax
 - You can run tests and interpret results
 
 ## Extension Activity
+
 If you finish early, try:
+
 - Adding a test for the Films filter
 - Testing that event cards show price information
 - Writing a test that opens and closes an event modal

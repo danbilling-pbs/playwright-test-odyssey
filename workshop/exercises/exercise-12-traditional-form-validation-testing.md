@@ -4,6 +4,7 @@
 **Objective:** Test form validation and error handling
 
 ## What You Will Learn
+
 - How to test form validation
 - How to handle error messages
 - How to test negative scenarios
@@ -11,6 +12,7 @@
 ## Instructions
 
 ### Step 1: Test Empty Form Submission (8 minutes)
+
 Create a test file: `tests/form-validation.spec.js`
 
 ```javascript
@@ -31,6 +33,7 @@ test('Test booking form validation', async ({ page }) => {
 ```
 
 ### Step 2: Test Invalid Email (7 minutes)
+
 Add this test:
 
 ```javascript
@@ -55,22 +58,27 @@ test('Test invalid email validation', async ({ page }) => {
 ```
 
 ## Questions to Investigate
+
 1. What happens when you submit an empty form?
 2. Does the system validate email format?
 3. Can you submit without payment information?
 4. What error messages (if any) are shown?
 
 ## Expected Behaviour vs Actual Behaviour
+
 Document what you find:
+
 - **Expected:** Form should show error messages for missing fields
 - **Actual:** [Write what actually happens]
 
 ## Expected Outcomes
+
 - You understand how to test form validation
 - You can identify gaps between expected and actual behaviour
 - You know how to test negative scenarios
 
 ## Discussion Points
+
 - Should the application prevent invalid submissions?
 - What would make error messages more user-friendly?
 - How would you test this manually vs automated?

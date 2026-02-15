@@ -4,6 +4,7 @@
 **Objective:** Handle complex user workflows and advanced testing concepts
 
 ## What You Will Learn
+
 - How to test multi-step workflows
 - How to handle dynamic content
 - How to test complex business scenarios
@@ -11,6 +12,7 @@
 ## Instructions
 
 ### Step 1: Complete User Journey Test (15 minutes)
+
 Create: `tests/user-journey.spec.js`
 
 This test simulates a complete user experience:
@@ -66,6 +68,7 @@ test('Complete user journey: Browse → Filter → Compare → Book', async ({ p
 ```
 
 ### Step 2: Test Concurrent User Scenarios (10 minutes)
+
 Simulate multiple users affecting inventory:
 
 ```javascript
@@ -127,23 +130,27 @@ test('Multiple users buying tickets simultaneously', async ({ browser }) => {
 ```
 
 ## Advanced Testing Concepts Covered
+
 - **User Journey Testing:** End-to-end workflows
 - **Dynamic Content:** Handling changing data
 - **Concurrent Users:** Simulating real-world usage
 - **Business Logic:** Complex scenario validation
 
 ## Expected Outcomes
+
 - You can test complete user workflows  
 - You understand how to handle dynamic content
 - You can simulate complex, real-world scenarios
 
 ## Real-World Applications
+
 - E-commerce checkout processes
 - Booking systems under load
 - Multi-user collaboration tools
 - Financial transaction systems
 
 ## Discussion Points
+
 - How would you test this application under heavy load?
 - What other user journeys should be tested?
 - How would you test the application across different devices?

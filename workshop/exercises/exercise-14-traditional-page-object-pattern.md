@@ -4,22 +4,27 @@
 **Objective:** Learn to organise test code using the Page Object Pattern
 
 ## What You Will Learn
+
 - How to reduce code duplication
 - How to make tests more maintainable
 - How to create reusable test components
 
 ## The Problem
+
 Without organisation, tests become difficult to maintain:
+
 - Repeated code for common actions
 - Hard to update when UI changes
 - Difficult to read and understand
 
 ## The Solution: Page Objects
+
 Page Objects represent parts of your application as code objects.
 
 ## Instructions
 
 ### Step 1: Create a Page Object (15 minutes)
+
 Create: `pages/TicketybooPage.js`
 
 ```javascript
@@ -67,6 +72,7 @@ module.exports = TicketybooPage;
 ```
 
 ### Step 2: Create a Booking Page Object (10 minutes)
+
 Create: `pages/BookingModal.js`
 
 ```javascript
@@ -109,6 +115,7 @@ module.exports = BookingModal;
 ```
 
 ### Step 3: Use Page Objects in Tests
+
 Create: `tests/page-object-example.spec.js`
 
 ```javascript
@@ -151,17 +158,21 @@ test('Book tickets using page objects', async ({ page }) => {
 ```
 
 ## Benefits of Page Objects
+
 - **Reusable:** Use the same booking form code in multiple tests
 - **Maintainable:** Change selectors in one place
 - **Readable:** Tests read like user stories
 
 ## Expected Outcomes
+
 - You understand the Page Object Pattern
 - You can create reusable test components
 - Your tests are more organised and maintainable
 
 ## Extension Activity
+
 Create page objects for:
+
 - Event filtering functionality
 - Purchase confirmation handling
 - Error message management
