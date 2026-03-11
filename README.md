@@ -124,7 +124,7 @@ npm run agents:sample # Run sample agent (workshop)
 ## 📚 Documentation
 
 - **Setup Guides:** [`workshop/setup/`](workshop/setup/)
-- **Workshop Materials:** [`README-workshops.md`](README-workshops.md)
+- **Workshop Materials:** [`workshops.md`](workshops.md)
 - **Test Plans:** [`test-plans/`](test-plans/)
 - **Playwright Docs:** [playwright.dev](https://playwright.dev)
 
