@@ -142,7 +142,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**New to Playwright?** Start with the [basic tests](tests/example.spec.js) or explore the [workshop materials](README-workshops.md) for advanced concepts!
+**New to Playwright?** Start with the [basic tests](tests/example.spec.js) or explore the [workshop materials](workshops.md) for advanced concepts!
 
 
 
