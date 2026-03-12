@@ -10,16 +10,16 @@ test.describe('Event Selection and Detail Modal', () => {
 
   test('Concert Event Modal Display', async ({ page }) => {
     // Click on the 'Rock Legends Live' concert event card
-    await page.getByText('concert Rock Legends Live The').click();
+    await page.getByRole('heading', { name: 'Rock Legends Live', level: 3 }).click();
 
     // Verify event detail modal opens with correct information
     await expect(page.getByRole('heading', { name: 'Rock Legends Live', level: 2 })).toBeVisible();
-    await expect(page.getByText('The Thunder Band')).toBeVisible();
-    await expect(page.getByText('O2 Arena, London')).toBeVisible();
-    await expect(page.getByText('Sun, Mar 15, 2026')).toBeVisible();
-    await expect(page.getByText('19:00')).toBeVisible();
-    await expect(page.getByText('£65.00 per ticket')).toBeVisible();
-    await expect(page.getByText('150 tickets')).toBeVisible();
+    await expect(page.locator('#eventDetails .event-artist', { hasText: 'The Thunder Band' })).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('O2 Arena, London')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('Sun, Mar 15, 2026')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('19:00')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('£65.00 per ticket')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('150 tickets')).toBeVisible();
     await expect(page.getByText('Experience an unforgettable night of rock music with The Thunder Band!')).toBeVisible();
 
     // Verify close button is visible
@@ -45,16 +45,16 @@ test.describe('Event Selection and Detail Modal', () => {
 
   test('Film Event Modal Display', async ({ page }) => {
     // Click on the 'Classic Cinema Night' film event card
-    await page.getByText('film Classic Cinema Night The').click();
+    await page.getByRole('heading', { name: 'Classic Cinema Night', level: 3 }).click();
 
     // Verify event detail modal opens with correct film information
     await expect(page.getByRole('heading', { name: 'Classic Cinema Night', level: 2 })).toBeVisible();
-    await expect(page.getByText('The Godfather')).toBeVisible();
-    await expect(page.getByText('Broadway Cinema, Nottingham')).toBeVisible();
-    await expect(page.getByText('Fri, Mar 20, 2026')).toBeVisible();
-    await expect(page.getByText('20:00')).toBeVisible();
-    await expect(page.getByText('£12.50 per ticket')).toBeVisible();
-    await expect(page.getByText('200 tickets')).toBeVisible();
+    await expect(page.locator('#eventDetails .event-artist', { hasText: 'The Godfather' })).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('📍 Venue: Broadway Cinema, Nottingham')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('Fri, Mar 20, 2026')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('20:00')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('£12.50 per ticket')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('200 tickets')).toBeVisible();
 
     // Verify booking form shows correct pricing for film
     await expect(page.getByText('Total: £12.50')).toBeVisible();
@@ -69,16 +69,16 @@ test.describe('Event Selection and Detail Modal', () => {
 
   test('Comedy Event Modal Display', async ({ page }) => {
     // Click on the 'Stand-Up Spectacular' comedy event card
-    await page.getByText('comedy Stand-Up Spectacular Sarah').click();
+    await page.getByRole('heading', { name: 'Stand-Up Spectacular', level: 3 }).click();
 
     // Verify event detail modal opens with correct comedy information
     await expect(page.getByRole('heading', { name: 'Stand-Up Spectacular', level: 2 })).toBeVisible();
-    await expect(page.getByText('Sarah Johnson')).toBeVisible();
-    await expect(page.getByText('The Comedy Store, Manchester')).toBeVisible();
-    await expect(page.getByText('Wed, Mar 25, 2026')).toBeVisible();
-    await expect(page.getByText('21:00')).toBeVisible();
-    await expect(page.getByText('£28.00 per ticket')).toBeVisible();
-    await expect(page.getByText('80 tickets')).toBeVisible();
+    await expect(page.locator('#eventDetails .event-artist', { hasText: 'Sarah Johnson' })).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('The Comedy Store, Manchester')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('Wed, Mar 25, 2026')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('21:00')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('£28.00 per ticket')).toBeVisible();
+    await expect(page.locator('#eventDetails').getByText('74 tickets')).toBeVisible();
 
     // Verify booking form shows correct pricing for comedy
     await expect(page.getByText('Total: £28.00')).toBeVisible();

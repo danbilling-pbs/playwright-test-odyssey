@@ -57,7 +57,7 @@ test.describe('Booking Process and Form Interaction', () => {
     // Fill in Card Number field with valid card number
     const cardNumberField = page.getByRole('textbox', { name: 'Card Number:' });
     await cardNumberField.fill('4532123456789012');
-    await expect(cardNumberField).toHaveValue('4532123456789012');
+    await expect(cardNumberField).toHaveValue('4532 1234 5678 9012');
 
     // Fill in Expiry Date with valid future date (MM/YY format)
     const expiryField = page.getByRole('textbox', { name: 'Expiry Date:' });
